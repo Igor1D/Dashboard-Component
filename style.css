@@ -1,5 +1,5 @@
 body {
-    background-color: hsl(235, 46%, 20%);
+    background-color: hsl(236, 45%, 14%);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -34,24 +34,32 @@ ul {
 .mainDiv {
     width: 860px;
     height: 405px;
-    border: 5px solid red;
+    border: 5px solid rgb(245, 245, 245);
     display: flex;
+    flex-direction: row;
     flex-wrap: wrap;
-    flex-flow: column wrap;
     justify-content: space-between;
 }
 
 /* User data and Time frames */
 
-.reportDiv {
+.reportLayerDiv {
+    position: relative;
     width: 23%;
-    height: 100%;
-    border: 3px solid yellow;
+    height: 50%;
+    border: 3px solid rgb(11, 11, 11);
+    background-color: rgb(115, 0, 255);
+    
+
 }
 
 .timeFramesDiv {
-
+    
+    width: 100%;
+    height: 100%;
+    position: absolute;
     border: 3px solid rgb(255, 77, 0);
+    background-color: rgb(71, 34, 116);;
 }
 
 
@@ -61,7 +69,7 @@ ul {
     position: relative;
     width: 23%;
     height: 45%;
-    background-color: yellow;
+    background-color: rgb(255, 77, 0);
 }
 
 .workDiv {
@@ -73,42 +81,81 @@ ul {
 
 /* Play */
 
-.playDiv {
+.playLayerDiv {
+    position: relative;
     width: 23%;
     height: 45%;
+    background-color: rgb(0, 174, 255);
+}
 
+.playDiv {
+    width: 100%;
+    height: 100%;
+    position: absolute;
     border: 3px solid rgb(28, 26, 26);
 }
 
 /* Study */
 
-.studyDiv {
+.studyLayerDiv {
+    position: relative;
     width: 23%;
     height: 45%;
-
+    background-color: rgb(255, 0, 98);
+}
+.studyDiv {
+    width: 100%;
+    height: 100%;
+    position: absolute;
     border: 3px solid rgb(38, 241, 211);
 }
 
 /* Exercise */
 
-.exerciseDiv {
+.exerciseLayerDiv{
+    position: relative;
     width: 23%;
     height: 45%;
+    background-color: rgb(20, 179, 89);
+}
+
+.exerciseDiv {
+    width: 100%;
+    height: 100%;
+    position: absolute;
     border: 3px solid rgb(69, 68, 94);
+    
 }
 
 /* Social */
 
-.socialDiv {
+.socialLayerDiv {
+    position: relative;
     width: 23%;
     height: 45%;
+    background-color: rgb(55, 0, 255);
+}
+
+.socialDiv {
+    width: 100%;
+    height: 100%;
+    position: absolute;
     border: 3px solid rgb(70, 36, 48);
 }
 
 /* Self care */
 
-.selfCareDiv {
+
+.selfCareLayerDiv {
+    position: relative;
     width: 23%;
     height: 45%;
+    background-color: rgb(255, 208, 0);
+    
+}
+.selfCareDiv {
+    width: 100%;
+    height: 100%;
+    position: absolute;
     border: 3px solid rgb(122, 185, 142);
 }
