@@ -1,0 +1,113 @@
+body {
+    background-color: hsl(235, 46%, 20%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: "Rubik";
+    font-weight: 300, 400, 500;
+    font-size: 18px
+}
+
+h4 {
+    color: white;
+}
+
+h1 {
+    color: white;
+}
+
+p {
+    color: white;
+}
+
+ul {
+    color: white;
+    list-style-type:none;
+    margin: 0;
+    padding: 0;
+}
+
+
+/* Main Div */
+
+.mainDiv {
+    width: 860px;
+    height: 405px;
+    border: 5px solid red;
+    display: flex;
+    flex-wrap: wrap;
+    flex-flow: column wrap;
+    justify-content: space-between;
+}
+
+/* User data and Time frames */
+
+.reportDiv {
+    width: 23%;
+    height: 100%;
+    border: 3px solid yellow;
+}
+
+.timeFramesDiv {
+
+    border: 3px solid rgb(255, 77, 0);
+}
+
+
+/* Work */
+
+.workLayerDiv {
+    position: relative;
+    width: 23%;
+    height: 45%;
+}
+
+.workDiv {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    border: 3px solid rgb(0, 153, 255);
+}
+
+/* Play */
+
+.playDiv {
+    width: 23%;
+    height: 45%;
+
+    border: 3px solid rgb(28, 26, 26);
+}
+
+/* Study */
+
+.studyDiv {
+    width: 23%;
+    height: 45%;
+
+    border: 3px solid rgb(38, 241, 211);
+}
+
+/* Exercise */
+
+.exerciseDiv {
+    width: 23%;
+    height: 45%;
+    border: 3px solid rgb(69, 68, 94);
+}
+
+/* Social */
+
+.socialDiv {
+    width: 23%;
+    height: 45%;
+    border: 3px solid rgb(70, 36, 48);
+}
+
+/* Self care */
+
+.selfCareDiv {
+    width: 23%;
+    height: 45%;
+    border: 3px solid rgb(122, 185, 142);
+}
