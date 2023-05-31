@@ -63,6 +63,16 @@ ul {
 }
 
 
+/* 6 squares */
+
+.sixSquares {
+    border: 5px solid yellow;
+    flex: 1;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
 /* Work */
 
 .workLayerDiv {
