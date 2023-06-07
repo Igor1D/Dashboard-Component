@@ -9,16 +9,39 @@ body {
     font-size: 18px
 }
 
+/* Activities - work/play/study/Exercise/Social/Self care */
+
 h4 {
     color: white;
+    font-weight: 400;
+    margin-top: 10px;
+    margin-left: 20px;
+    margin-bottom: 25px;
+
 }
+
+/* Activities - hours */
 
 h1 {
     color: white;
+    font-weight: 100;
+    font-size: 45px;
+    margin-left: 20px;
+    margin-top: 0;
+    margin-bottom: 0px;
+
+
+    
 }
 
+/* Activities - last week/ previous */
+
 p {
-    color: white;
+    color: hsl(236, 100%, 87%);
+    font-size: 14px;
+    margin-left: 20px;
+    margin-top: 8px;
+
 }
 
 ul {
@@ -30,6 +53,19 @@ ul {
     list-style-type: none;
     margin-top: 338px;
 }
+
+li {
+    color: hsl(235, 45%, 61%);
+    font-size: 15px;
+    font-weight: 400;
+}
+
+li:hover {
+    color: white;
+    cursor: pointer;
+}
+
+
 
 
 
@@ -70,7 +106,7 @@ ul {
     border: 3px solid white;
     border-radius: 50%;
     margin-left: 40px;
-    margin-top: 40px;
+    margin-top: 15px;
     margin-bottom: 35px;
 }
 
@@ -78,17 +114,19 @@ ul {
     padding-left: 40px;
     margin: 0;
     font-weight: 100;
-    font-size: 16px;
+    font-size: 14px;
+    color: hsl(236, 100%, 87%);
 
 }
 
 .userName {
-    padding-left: 40px;
+    padding-left: 18px;
     padding-bottom: 40px;
     margin-top: 10px;
     font-weight: 300;
+    font-size: 35px;
 }
-  
+
 
 
 
@@ -123,10 +161,11 @@ ul {
     padding-top: 37px;
     margin-bottom: 20px;
     border-radius: 6%;
-    overflow: hidden;  /* can hide any content that exceeds the container's boundaries */
+    overflow: hidden;
+    /* can hide any content that exceeds the container's boundaries */
 
-   
-} 
+
+}
 
 
 .workIcon {
@@ -135,9 +174,9 @@ ul {
     z-index: 0;
     left: 144px;
     top: -10px;
-    
-    
-} 
+
+
+}
 
 
 .workDiv {
@@ -147,26 +186,44 @@ ul {
     background-color: hsl(237, 42%, 20%);
     border-radius: 6%;
     display: flex;
+    flex-direction: row;
+
+}
+
+
+
+.workDiv:hover{
+    background-color: hsl(237, 37%, 29%);
+    cursor: pointer;
+}
+
+
+.workDivInnerContent {
+    display: flex;
     flex-direction: column;
-    justify-content: center;
+    width: 90%;
+    padding-top: 20px;
 
 }
 
-.workDiv h4,
-.workDiv h1,
-.workDiv p {
-    padding-left: 15px;
-    margin: 10px;
-    
+.threeDotsDiv {
+    display: flex;
+    flex-direction: column;
+    width: 10%;
+    padding-top: 37px;
+    padding-right: 20px;
 }
 
-.workDiv h1 {
-    font-size: 45px;
-    font-weight: 400;
+/* .threeDotsIcon:hover {
+    fill: rgb(17, 18, 17);
+    color: black;
+    cursor: pointer;
+
+} */
+
+.threeDotsIcon {
+    fill: red;
 }
-
-
-
 
 
 /* Play */
@@ -187,18 +244,36 @@ ul {
     z-index: 0;
     left: 144px;
     top: -10px;
-    
-    
-} 
+
+
+}
 
 .playDiv {
     width: 100%;
     height: 84%;
     position: absolute;
-    /* border: 3px solid rgb(28, 26, 26); */
     background-color: hsl(237, 42%, 20%);
     border-radius: 6%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
 }
+
+.playDivInnerContent {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    padding-top: 20px;
+
+}
+
+.playDiv:hover{
+    background-color: hsl(237, 37%, 29%);
+    cursor: pointer;
+}
+
+
+
 
 /* Study */
 
@@ -218,9 +293,9 @@ ul {
     z-index: 0;
     left: 144px;
     top: -10px;
-    
-    
-} 
+
+
+}
 
 .studyDiv {
     width: 100%;
@@ -229,8 +304,26 @@ ul {
     /* border: 3px solid rgb(38, 241, 211); */
     background-color: hsl(237, 42%, 20%);
     border-radius: 6%;
+    display: flex;
+    flex-direction: row;
 
 }
+
+.studyDivInnerContent {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    padding-top: 20px;
+}
+
+
+.studyDiv:hover{
+    background-color: hsl(237, 37%, 29%);
+    cursor: pointer;
+}
+
+
+
 
 /* Exercise */
 
@@ -250,9 +343,9 @@ ul {
     z-index: 0;
     left: 144px;
     top: -1px;
-    
-    
-} 
+
+
+}
 
 .exerciseDiv {
     width: 100%;
@@ -261,7 +354,23 @@ ul {
     /* border: 3px solid rgb(69, 68, 94); */
     background-color: hsl(237, 42%, 20%);
     border-radius: 6%;
+    display: flex;
+    flex-direction: row;
 }
+
+.exerciseDivInnerContent {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    padding-top: 20px;
+}
+
+
+.exerciseDiv:hover{
+    background-color: hsl(237, 37%, 29%);
+    cursor: pointer;
+}
+
 
 /* Social */
 
@@ -281,8 +390,8 @@ ul {
     z-index: 0;
     left: 160px;
     top: -10px;
-    
-    
+
+
 }
 
 .socialDiv {
@@ -292,7 +401,22 @@ ul {
     /* border: 3px solid rgb(70, 36, 48); */
     background-color: hsl(237, 42%, 20%);
     border-radius: 6%;
+    display: flex;
+    flex-direction: row;
 }
+
+.socialDiv:hover{
+    background-color: hsl(237, 37%, 29%);
+    cursor: pointer;
+}
+
+.socialDivInnerContent {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    padding-top: 20px;
+}
+
 
 /* Self care */
 
@@ -315,8 +439,8 @@ ul {
     z-index: 0;
     left: 160px;
     top: -10px;
-    
-    
+
+
 }
 
 .selfCareDiv {
@@ -326,5 +450,20 @@ ul {
     /* border: 3px solid rgb(122, 185, 142); */
     background-color: hsl(237, 42%, 20%);
     border-radius: 6%;
+    display: flex;
+    flex-direction: row;
 
 }
+
+.selfCareDiv:hover{
+    background-color: hsl(237, 37%, 29%);
+    cursor: pointer;
+}
+
+.selfCareDivInnerContent {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    padding-top: 20px;
+}
+
