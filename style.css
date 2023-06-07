@@ -29,9 +29,6 @@ h1 {
     margin-left: 20px;
     margin-top: 0;
     margin-bottom: 0px;
-
-
-    
 }
 
 /* Activities - last week/ previous */
@@ -66,10 +63,6 @@ li:hover {
 }
 
 
-
-
-
-
 /* Main Div */
 
 .mainDiv {
@@ -83,13 +76,15 @@ li:hover {
 
 .sidePanelDiv {
     display: flex;
+    width: 25%;
+    position: relative;
 }
 
 /* User data and Time frames */
 
-.reportLayerDiv {
+#reportLayerDiv {
     position: relative;
-    width: 250px;
+    width: 100%;
     height: 68%;
     background-color: hsl(246, 80%, 60%);
     border-radius: 6%;
@@ -131,8 +126,8 @@ li:hover {
 
 
 .timeFramesDiv {
-    width: 250px;
-    height: 470px;
+    width: 100%;
+    height: 100%;
     position: absolute;
     background-color: hsl(237, 42%, 20%);
     border-radius: 6%;
@@ -143,32 +138,39 @@ li:hover {
 /* 6 squares main div */
 
 .sixSquares {
-    position: relative;
+    /* position: relative; */
     flex: 1;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
+    border: 5px solid rgb(216, 203, 203);
+    flex-direction: row;
 
 }
 
-/* Work */
 
-.workLayerDiv {
+.layerDiv {
     position: relative;
     width: 30%;
     height: 40%;
-    background-color: hsl(15, 100%, 70%);
     padding-top: 37px;
     margin-bottom: 20px;
     border-radius: 6%;
     overflow: hidden;
-    /* can hide any content that exceeds the container's boundaries */
+}
+
+/* Work */
+
+#workLayerDiv {
+
+    background-color: hsl(15, 100%, 70%);
+
 
 
 }
 
 
-.workIcon {
+.icon {
     position: absolute;
     height: 70px;
     z-index: 0;
@@ -179,7 +181,7 @@ li:hover {
 }
 
 
-.workDiv {
+.childDiv {
     width: 100%;
     height: 84%;
     position: absolute;
@@ -192,13 +194,13 @@ li:hover {
 
 
 
-.workDiv:hover{
+.childDiv:hover {
     background-color: hsl(237, 37%, 29%);
     cursor: pointer;
 }
 
 
-.workDivInnerContent {
+.childDivInnerContent {
     display: flex;
     flex-direction: column;
     width: 90%;
@@ -214,256 +216,79 @@ li:hover {
     padding-right: 20px;
 }
 
-/* .threeDotsIcon:hover {
-    fill: rgb(17, 18, 17);
-    color: black;
-    cursor: pointer;
-
-} */
-
-.threeDotsIcon {
-    fill: red;
-}
-
 
 /* Play */
 
-.playLayerDiv {
-    position: relative;
-    width: 30%;
-    height: 40%;
+#playLayerDiv {
+
     background-color: hsl(195, 74%, 62%);
-    padding-top: 37px;
-    border-radius: 6%;
-    overflow: hidden;
-}
-
-.playIcon {
-    position: absolute;
-    height: 70px;
-    z-index: 0;
-    left: 144px;
-    top: -10px;
-
 
 }
-
-.playDiv {
-    width: 100%;
-    height: 84%;
-    position: absolute;
-    background-color: hsl(237, 42%, 20%);
-    border-radius: 6%;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-}
-
-.playDivInnerContent {
-    display: flex;
-    flex-direction: column;
-    width: 90%;
-    padding-top: 20px;
-
-}
-
-.playDiv:hover{
-    background-color: hsl(237, 37%, 29%);
-    cursor: pointer;
-}
-
 
 
 
 /* Study */
 
-.studyLayerDiv {
+#studyLayerDiv {
     position: relative;
-    width: 30%;
-    height: 40%;
+
     background-color: hsl(348, 100%, 68%);
-    padding-top: 37px;
-    border-radius: 6%;
-    overflow: hidden;
-}
-
-.studyIcon {
-    position: absolute;
-    height: 70px;
-    z-index: 0;
-    left: 144px;
-    top: -10px;
-
 
 }
-
-.studyDiv {
-    width: 100%;
-    height: 84%;
-    position: absolute;
-    /* border: 3px solid rgb(38, 241, 211); */
-    background-color: hsl(237, 42%, 20%);
-    border-radius: 6%;
-    display: flex;
-    flex-direction: row;
-
-}
-
-.studyDivInnerContent {
-    display: flex;
-    flex-direction: column;
-    width: 90%;
-    padding-top: 20px;
-}
-
-
-.studyDiv:hover{
-    background-color: hsl(237, 37%, 29%);
-    cursor: pointer;
-}
-
-
 
 
 /* Exercise */
 
-.exerciseLayerDiv {
-    position: relative;
-    width: 30%;
-    height: 40%;
+#exerciseLayerDiv {
+
     background-color: hsl(145, 58%, 55%);
-    padding-top: 37px;
-    border-radius: 6%;
-    overflow: hidden;
-}
-
-.exerciseIcon {
-    position: absolute;
-    height: 50px;
-    z-index: 0;
-    left: 144px;
-    top: -1px;
-
 
 }
 
-.exerciseDiv {
-    width: 100%;
-    height: 84%;
-    position: absolute;
-    /* border: 3px solid rgb(69, 68, 94); */
-    background-color: hsl(237, 42%, 20%);
-    border-radius: 6%;
-    display: flex;
-    flex-direction: row;
-}
-
-.exerciseDivInnerContent {
-    display: flex;
-    flex-direction: column;
-    width: 90%;
-    padding-top: 20px;
-}
-
-
-.exerciseDiv:hover{
-    background-color: hsl(237, 37%, 29%);
-    cursor: pointer;
-}
 
 
 /* Social */
 
-.socialLayerDiv {
-    position: relative;
-    width: 30%;
-    height: 40%;
+#socialLayerDiv {
+
     background-color: hsl(264, 64%, 52%);
-    padding-top: 37px;
-    border-radius: 6%;
-    overflow: hidden;
-}
-
-.socialIcon {
-    position: absolute;
-    height: 80px;
-    z-index: 0;
-    left: 160px;
-    top: -10px;
-
 
 }
 
-.socialDiv {
-    width: 100%;
-    height: 84%;
-    position: absolute;
-    /* border: 3px solid rgb(70, 36, 48); */
-    background-color: hsl(237, 42%, 20%);
-    border-radius: 6%;
-    display: flex;
-    flex-direction: row;
-}
-
-.socialDiv:hover{
-    background-color: hsl(237, 37%, 29%);
-    cursor: pointer;
-}
-
-.socialDivInnerContent {
-    display: flex;
-    flex-direction: column;
-    width: 90%;
-    padding-top: 20px;
-}
 
 
 /* Self care */
 
 
-.selfCareLayerDiv {
-    position: relative;
-    width: 30%;
-    height: 40%;
+#selfCareLayerDiv {
+
     background-color: hsl(43, 84%, 65%);
-    padding-top: 37px;
-    border-radius: 6%;
-    overflow: hidden;
+
 
 
 }
 
-.selfCareIcon {
-    position: absolute;
-    height: 55px;
-    z-index: 0;
-    left: 160px;
-    top: -10px;
+@media only screen and (max-width: 870px) {
 
+    .mainDiv {
+        flex-direction: column;
+        margin: 15px;
+        width: 700px;
+        height: 90%; /* added height to fix the issue*/
+    }
 
-}
+    .sidePanelDiv {
+        width: 100%;
+        height: 200px;
+    }
 
-.selfCareDiv {
-    width: 100%;
-    height: 84%;
-    position: absolute;
-    /* border: 3px solid rgb(122, 185, 142); */
-    background-color: hsl(237, 42%, 20%);
-    border-radius: 6%;
-    display: flex;
-    flex-direction: row;
+    .sixSquares {
+        flex-direction: row;
+        width: 100%;
+        
+    }
+    .layerDiv {
+        width: 100%;
+    }
 
-}
-
-.selfCareDiv:hover{
-    background-color: hsl(237, 37%, 29%);
-    cursor: pointer;
-}
-
-.selfCareDivInnerContent {
-    display: flex;
-    flex-direction: column;
-    width: 90%;
-    padding-top: 20px;
-}
-
+  }
