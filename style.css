@@ -136,6 +136,22 @@ li:hover {
 
 }
 
+.timeFramesBtn {
+    cursor: pointer;
+    background-color: inherit;
+    border: none;
+    border-radius: 0;
+    color: hsl(235, 45%, 61%);
+    font-size: 15px;
+    font-weight: 400;
+
+}
+
+.timeFramesBtn:hover {
+    color: white;
+    cursor: pointer;
+
+}
 
 /* 6 squares main div */
 
