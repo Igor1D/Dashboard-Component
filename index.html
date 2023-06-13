@@ -4,25 +4,16 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   <link rel="stylesheet" href="./style.css">
-  
+  <link href='https://fonts.google.com/specimen/Rubik' rel='stylesheet' type='text/css'>
+
+
 
   <title>Frontend Mentor | Time tracking dashboard</title>
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution {
-      font-size: 11px;
-      text-align: center;
-    }
 
-    .attribution a {
-      color: hsl(228, 45%, 44%);
-    }
-  </style>
 </head>
 
 <body>
@@ -39,8 +30,8 @@
       <div class="timeFramesDiv">
         <ul>
           <li> <button class="timeFramesBtn" id="dailyBtn">Daily</button></li>
-          <li> <button class="timeFramesBtn" id ="weeklyBtn"> Weekly </button></li>
-          <li> <button class="timeFramesBtn" id = "monthlyBtn"> Monthly</button></li>
+          <li> <button class="timeFramesBtn activeBtn" id="weeklyBtn"> Weekly </button></li>
+          <li> <button class="timeFramesBtn" id="monthlyBtn"> Monthly</button></li>
         </ul>
       </div>
 
@@ -97,7 +88,7 @@
       </div>
 
       <div id="exerciseLayerDiv" class="layerDiv">
-        <img class="icon" src="./images/icon-exercise.svg" alt="icon-exercise">
+        <img class="icon exerciseIcon" src="./images/icon-exercise.svg" alt="icon-exercise">
         <div class="childDiv">
           <div class="childDivInnerContent">
             <h4>Exercise</h4>
@@ -113,7 +104,7 @@
       </div>
 
       <div id="socialLayerDiv" class="layerDiv">
-        <img class="icon" src="./images/icon-social.svg" alt="icon-social">
+        <img class="icon socialIcon" src="./images/icon-social.svg" alt="icon-social">
         <div class="childDiv">
           <div class="childDivInnerContent">
             <h4>Social</h4>

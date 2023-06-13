@@ -92,7 +92,7 @@ li:hover {
     display: flex;
     flex-direction: column;
     justify-content: center;
-   
+
 }
 
 .userPic {
@@ -131,8 +131,8 @@ li:hover {
     position: absolute;
     background-color: hsl(237, 42%, 20%);
     border-radius: 20px;
-    
-    
+
+
 
 }
 
@@ -147,6 +147,10 @@ li:hover {
 
 }
 
+.activeBtn {
+    color: white;
+}
+
 .timeFramesBtn:hover {
     color: white;
     cursor: pointer;
@@ -154,6 +158,14 @@ li:hover {
 }
 
 /* 6 squares main div */
+
+.icon {
+    position: absolute;
+    height: 70px;
+    z-index: 0;
+    left: 144px;
+    top: -10px;
+}
 
 .sixSquares {
     /* position: relative; */
@@ -188,15 +200,9 @@ li:hover {
 }
 
 
-.icon {
-    position: absolute;
-    height: 70px;
-    z-index: 0;
-    left: 144px;
-    top: -10px;
 
 
-}
+
 
 
 .childDiv {
@@ -230,8 +236,8 @@ li:hover {
     display: flex;
     flex-direction: column;
     width: 10%;
-    padding-top: 37px;
-    padding-right: 20px;
+    margin-top: 33px;
+    margin-right: 20px;
 }
 
 
@@ -263,6 +269,10 @@ li:hover {
 
 }
 
+.exerciseIcon {
+    height: 50px;
+    margin-top: 10px;
+}
 
 
 /* Social */
@@ -271,6 +281,10 @@ li:hover {
 
     background-color: hsl(264, 64%, 52%);
 
+}
+
+.socialIcon {
+    height: 90px;
 }
 
 
@@ -286,11 +300,16 @@ li:hover {
 
 }
 
-@media (max-width: 870px) {
+@media (min-width: 375px) and (max-width: 870px) {
+
+    .icon {
+        margin-left: 165px;
+    }
+
 
     body {
         justify-content: flex-start;
-        
+
 
     }
 
@@ -298,9 +317,9 @@ li:hover {
         flex-direction: column;
         margin: 15px;
         width: 700px;
-        height: 2000px; 
+        height: 1500px;
         display: flex;
-        margin-top: 200px;
+        margin-top: 100px;
     }
 
     .sidePanelDiv {
@@ -319,22 +338,23 @@ li:hover {
         justify-content: unset;
         margin-left: 0;
         height: 50px;
-        
-        
 
-        
+
+
+
     }
+
     .layerDiv {
         width: 100%;
         height: 150px;
-        
+
     }
 
     #reportLayerDiv {
         flex-direction: row;
         display: flex;
         height: 180px;
-        
+
     }
 
     ul {
@@ -345,14 +365,14 @@ li:hover {
     }
 
     li {
-        font-size: 18px;
+        font-size: px;
     }
 
     .userPic {
-        width: 90px;
-        height: 90px;
+        width: 85px;
+        height: 85px;
         margin-top: 40px;
-        margin-right: 20px;
+        margin-right: 15px;
         margin-left: 15px;
 
 
@@ -362,10 +382,10 @@ li:hover {
     .reportText {
         padding: 0px;
         margin-top: 60px;
-        margin-right: 50px;
+        margin-right: 60px;
         z-index: 3;
         position: absolute;
-        
+
 
     }
 
@@ -374,6 +394,8 @@ li:hover {
         margin-top: 80px;
         margin-left: 0;
         padding-left: 0;
+        font-size: 35px;
+
 
 
     }
@@ -381,9 +403,9 @@ li:hover {
     p {
         position: relative;
         justify-content: flex-end;
-        bottom: 45px;
-        margin-left: 280px;
-        font-size: 18px;
+        bottom: 38px;
+        margin-left: 250px;
+        font-size: 16px;
         z-index: 1;
         width: 200px;
     }
@@ -397,10 +419,19 @@ li:hover {
     h1 {
         font-weight: 100;
     }
-    
+
     .threeDotsIcon {
         position: relative;
     }
 
+    .timeFramesBtn {
+        font-size: 18px;
+    }
 
-  }
+    .threeDotsDiv {
+
+        margin-right: 40px;
+    }
+
+
+}
