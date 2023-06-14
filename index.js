@@ -10,8 +10,9 @@ fetch('./data.json').then(response => response.json()).then(
 
             allTimeFramesBtns[i].addEventListener('click', () => {
 
-                let timeStrings = ['daily', 'weekly', 'monthly'];
+                // Which btn is clicked
 
+                let timeStrings = ['daily', 'weekly', 'monthly'];
                 for (let l = 0; l < allTimeFramesBtns.length; l++) {
 
                     allTimeFramesBtns[l].classList.remove('activeBtn');
@@ -19,10 +20,11 @@ fetch('./data.json').then(response => response.json()).then(
 
                 allTimeFramesBtns[i].classList.add('activeBtn');
 
+                //Current
+
                 for (let j = 0; j < data.length; j++) {
 
                     let currentHrs = data[j].timeframes[timeStrings[i]].current;
-
                     currentHrsH1s[j].innerText = currentHrs + 'hrs';
 
                 }
@@ -33,11 +35,7 @@ fetch('./data.json').then(response => response.json()).then(
 
                     let previousHrs = data[k].timeframes[timeStrings[i]].previous;
                     previousHrsPs[k].innerText = 'Previous ' + ' - ' + previousHrs + 'hrs'
-
                 }
-
             })
-
         }
-
     });
