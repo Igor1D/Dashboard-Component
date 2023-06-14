@@ -28,17 +28,18 @@ h1 {
     font-weight: 100;
     font-size: 45px;
     margin-left: 20px;
-    margin-top: 0;
+    margin-top: 10px;
     margin-bottom: 0px;
 }
 
 /* Activities - last week/ previous */
 
-p {
+.previousHrs {
     color: hsl(236, 100%, 87%);
     font-size: 14px;
-    margin-left: 20px;
-    margin-top: 8px;
+    margin-left: 19px;
+    flex: 1;
+    margin-top: 3px;
 
 }
 
@@ -162,11 +163,11 @@ li:hover {
 
 .icon {
     position: absolute;
-    height: 70px;
-    z-index: 0;
-    left: 144px;
-    top: -10px;
+    height: 60px;
+    right: 10%;
+    top: 0px;
 }
+
 
 .sixSquares {
     /* position: relative; */
@@ -176,6 +177,7 @@ li:hover {
     justify-content: space-around;
     flex-direction: row;
     margin-left: 13px;
+    
 
 }
 
@@ -188,6 +190,8 @@ li:hover {
     margin-bottom: 20px;
     border-radius: 20px;
     overflow: hidden;
+    
+    
 }
 
 /* Work */
@@ -212,8 +216,10 @@ li:hover {
     position: absolute;
     background-color: hsl(237, 42%, 20%);
     border-radius: 20px;
+    /* border-top-left-radius: 20px; */
     display: flex;
     flex-direction: row;
+    
 
 }
 
@@ -255,7 +261,7 @@ li:hover {
 /* Study */
 
 #studyLayerDiv {
-    position: relative;
+
 
     background-color: hsl(348, 100%, 68%);
 
@@ -272,7 +278,7 @@ li:hover {
 
 .exerciseIcon {
     height: 50px;
-    margin-top: 10px;
+    margin-top: 3px;
 }
 
 
@@ -285,7 +291,8 @@ li:hover {
 }
 
 .socialIcon {
-    height: 90px;
+    height: 80px;
+    margin-top: 0px;
 }
 
 
@@ -301,7 +308,15 @@ li:hover {
 
 }
 
-@media (min-width: 375px) and (max-width: 870px) {
+.threeDotsIcon {
+    position: absolute;
+    width: 25px;
+    height: 6px;
+    top: 33px;
+    right: 20px;
+}
+
+@media (max-width: 870px) {
 
     .icon {
         margin-left: 165px;
@@ -383,7 +398,7 @@ li:hover {
     .reportText {
         padding: 0px;
         margin-top: 60px;
-        margin-right: 60px;
+        margin-right: 65px;
         z-index: 3;
         position: absolute;
 
@@ -401,38 +416,64 @@ li:hover {
 
     }
 
-    p {
-        position: relative;
+    .previousHrs {
+        position: absolute;
         justify-content: flex-end;
-        bottom: 38px;
-        margin-left: 250px;
+        right: 18px;
+        bottom: 20px;
+
         font-size: 16px;
         z-index: 1;
-        width: 200px;
+        
     }
 
     h4 {
         margin-bottom: 10px;
-        font-size: 25px;
+        font-size: 20px;
         font-weight: 400;
     }
 
     h1 {
         font-weight: 100;
+        font-size: 40px;
+        margin-top: 10px;
     }
 
     .threeDotsIcon {
-        position: relative;
+        position: absolute;
+        right: 5%;
     }
 
     .timeFramesBtn {
-        font-size: 18px;
+        font-size: 16px;
     }
 
     .threeDotsDiv {
 
         margin-right: 40px;
     }
+
+ 
+
+
+
+} 
+@media (max-width: 450px) {
+    .reportText {
+        margin-top: 60px;
+        margin-left: 45px
+    }
+
+    .userName {
+        margin-top: 80px;
+        font-size: 28px;
+        font-weight: 300;
+    }
+
+    .userPic {
+        margin-left: 15px;
+    }
+
 
 
 }

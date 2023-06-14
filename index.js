@@ -12,9 +12,9 @@ fetch('./data.json').then(response => response.json()).then(
 
                 let timeStrings = ['daily', 'weekly', 'monthly'];
 
-                for (let i = 0; i < allTimeFramesBtns.length; i++) {
+                for (let l = 0; l < allTimeFramesBtns.length; l++) {
 
-                    allTimeFramesBtns[i].classList.remove('activeBtn');
+                    allTimeFramesBtns[l].classList.remove('activeBtn');
                 }
 
                 allTimeFramesBtns[i].classList.add('activeBtn');
